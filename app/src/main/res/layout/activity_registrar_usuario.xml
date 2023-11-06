@@ -39,7 +39,7 @@
             android:textColor="@color/search"
             android:textStyle="bold"
             android:gravity="center|center_horizontal"
-            android:text="@string/label_bienvenida"/>
+            android:text="@string/label_account"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center|center_horizontal"
-            android:text="@string/label_bienvenidaSecondary"/>
+            android:text="@string/label_accountSecondary"/>
     </LinearLayout>
 
     <LinearLayout
@@ -60,6 +60,27 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
         android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputUsuario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/label_usuario"
+            app:startIconDrawable="@drawable/email"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_regular"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtInputEmail"
@@ -83,6 +104,27 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/label_usuario"
+            app:startIconDrawable="@drawable/email"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_regular"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtInputPassword"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -93,14 +135,14 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_regular"
-            android:inputType="textPassword"
-            android:textSize="15sp"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_regular"
+                android:inputType="textPassword"
+                android:textSize="15sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
     <LinearLayout
@@ -117,14 +159,14 @@
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:fontFamily="@font/raleway_bold"
-            android:text="@string/label_start_session"
+            android:text="@string/label_create_session"
             android:textColor="#fff"
             android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/rounded_button">
-    </Button>
-</LinearLayout>
+        </Button>
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/linearParte5"
@@ -134,7 +176,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/txtNuevoUsuario"
+            android:id="@+id/txtLogeo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/san_francisco"
@@ -142,7 +184,7 @@
             android:textStyle="bold"
             android:textColor="@color/button"
             android:gravity="center|center_horizontal"
-            android:text="@string/label_nuevoUser"/>
+            android:text="@string/label_logeo"/>
     </LinearLayout>
 
 </RelativeLayout>

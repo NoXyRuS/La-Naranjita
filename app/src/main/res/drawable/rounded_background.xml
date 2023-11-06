@@ -3,6 +3,6 @@
     <corners android:radius="12dp" /> <!-- Ajusta el valor del radio para definir el redondeo -->
     <solid android:color="#FFFFFF" /> <!-- Color de fondo de los bordes -->
     <stroke
-        android:color="#000000" <!-- Color del borde -->
-    android:width="1dp" /> <!-- Ancho del borde -->
+        android:color="#000000" >
+    </stroke>
 </shape>

@@ -7,6 +7,10 @@
     <string name="label_olvide_password">Olvide mi contraseña ?</string>
     <string name="label_bienvenida">Welcome Back!</string>
     <string name="label_bienvenidaSecondary">We are glad to see you back</string>
+    <string name="label_account">Crate new account</string>
+    <string name="label_accountSecondary">Enter the fields below to get started</string>
+    <string name="label_create_session">Sign Up</string>
+    <string name="label_logeo"><u>Sign In</u></string>
     <string name="title_activity_inicio">InicioActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
